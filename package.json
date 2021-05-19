@@ -1,0 +1,34 @@
+{
+  "name": "pinetree",
+  "version": "1.0.0",
+  "description": "Hiking diary / playground for experimenting with Hapi",
+  "main": "webpack.config.js",
+  "scripts": {
+    "start": "nodemon server",
+    "build": "webpack -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jnweiner/pinetree.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jnweiner/pinetree/issues"
+  },
+  "homepage": "https://github.com/jnweiner/pinetree#readme",
+  "dependencies": {
+    "@babel/core": "^7.14.3",
+    "@babel/preset-env": "^7.14.2",
+    "@babel/preset-react": "^7.13.13",
+    "@hapi/hapi": "^20.1.3",
+    "@hapi/inert": "^6.0.3",
+    "babel-loader": "^8.2.2",
+    "path": "^0.12.7",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "webpack": "^5.37.1",
+    "webpack-cli": "^4.7.0"
+  }
+}
