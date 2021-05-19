@@ -3,6 +3,7 @@
 const Hapi = require('@hapi/hapi');
 const Inert = require('@hapi/inert');
 const Path = require('path');
+const db = require('../db');
 
 const init = async() => {
   const server = new Hapi.Server({
