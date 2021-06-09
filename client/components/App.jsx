@@ -10,7 +10,7 @@ const App = () => {
     return (
       <div>
         <AuthNav />
-        { user ? <Profile /> : <span>No one is logged in</span>}
+        <span>{ user ? user.name : 'No one' } is logged in</span>
         <br />
         <span>I am a React test</span>
       </div>
