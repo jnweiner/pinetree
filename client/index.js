@@ -1,5 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './components/App.jsx';
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./components/App.jsx";
+import { BrowserRouter as Router } from "react-router-dom";
+import Auth0ProviderWithHistory from "./auth/auth0-provider-with-history";
 
-ReactDOM.render(<App />, document.getElementById('app'));
+ReactDOM.render(
+  <Router>
+    <Auth0ProviderWithHistory>
+      <App />
+    </Auth0ProviderWithHistory>
+  </Router>,
+  document.getElementById("app")
+);
