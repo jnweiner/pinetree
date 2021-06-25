@@ -6,7 +6,7 @@ const Profile = () => {
   const { name, email } = user;
 
   return (
-    <span>The current user is {name}</span>
+    <span>{JSON.stringify(user, null, 2)}</span>
   )
 
 };

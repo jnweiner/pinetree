@@ -4,13 +4,14 @@ CREATE DATABASE pinetree;
 
 CREATE TABLE users (
   id BIGSERIAL PRIMARY KEY,
+  sub VARCHAR(50),
   username VARCHAR(20),
   email VARCHAR(50)
 );
 
 CREATE TABLE hikes (
   id BIGSERIAL PRIMARY KEY,
-  date DATE,
+  date VARCHAR(20),
   location VARCHAR(50),
   trail VARCHAR(50),
   distance INT,
